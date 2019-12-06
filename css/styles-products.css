@@ -1,0 +1,46 @@
+nav.submenu{
+	height: 75%;
+	display:block;
+	background-color: #FFF;
+	border-right: 5px dotted #230D0C;
+	margin:0px;
+}
+
+
+.submenu a{
+	margin-left: 20px;
+    display:block;
+    height:2rem;
+    margin-left: 20px;
+    padding: 10px;
+    color:#230D0C;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.submenu a:hover{
+    color:#1D2128;
+    font-weight: 500;
+    font-size: 1.3rem;
+    background-color: #FFF;
+}
+
+.category-card{
+    width: 28%;
+    height: 100%;
+    text-align: center;
+    margin: 20px 20px;
+    padding: auto;
+    background-color: #F1EFEF;
+    box-shadow: 1px 1px 1.5px #675151;
+    border: 1px solid #C7BFBF;
+}
+
+.price-text{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px 0px 10px;
+}
