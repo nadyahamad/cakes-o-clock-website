@@ -1,0 +1,60 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  background-color: #F1EFEF;
+  display: block;
+}
+
+
+/*= ABOUT US - CONTENT| LARGE/DESKTOP
+--------------------------------------------------------*/
+
+ /* Column container */
+.content {
+  display: block;
+  background-color: #F1EFEF;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.column1 {
+  width: 40%; /* Set the width of the sidebar */
+  float:left;
+  padding: 20px; /* Some padding */
+}
+
+/* Main column -Right */
+.column2 {
+  width: 40%; /* Set the width of the main content */
+  float: right;
+  margin-bottom:  20px;
+  padding: 20px; /* Some padding */
+  margin-right:0;
+  }
+h1.banner-h1 {font-weight: 800;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+p.about-us-text {
+  font-style: sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  border-top: 3px dotted #fff;
+  border-bottom: 6px dotted #fff;
+  padding: 20px 0px;
+  text-shadow: 1px 1px 3px #230D0C;
+}
+/* Fake image, just for this example */
+.img {
+  display:block;
+  width: 100%;
+  padding: 1px;
+  height: 100%;
+  margin-bottom: 50%;
+}
