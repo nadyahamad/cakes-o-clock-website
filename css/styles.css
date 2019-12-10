@@ -60,19 +60,19 @@ body {
 }
 
 .mt-1{
-     margin-top: 5%;
+     margin-top: 2%;
 }
 
 .ml-1{
-     margin-left: 5%;
+     margin-left: 2%;
 }
 
 .mr-1{
-     margin-right: 5%;
+     margin-right: 2%;
 }
 
 .mb-1{
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .mt-2{
@@ -318,8 +318,6 @@ nav a.active{
     display: none;
 }
 
-
-
 /*= HEADER | MEDIUM/TABLETS
 --------------------------------------------------------*/
 
@@ -410,7 +408,7 @@ main{
 }
 
 .banner-lg{
-    background: url('../img/index/home-1.jpg') 50% 50%  no-repeat fixed;
+    background: url('../img/index/home-2.jpg') 50% 50%  no-repeat fixed;
     width: 100%;
     height: 400px;
     text-align: center;
@@ -518,7 +516,7 @@ h2.bottom-dotted{
 @media (min-width: 768px) and (max-width: 991px) {
 
     .banner-lg{
-        background: url('../img/index/home-1.jpg') 50% 50%  no-repeat fixed;
+        background: url('../img/index/home-2.jpg') 50% 50%  no-repeat fixed;
         width: 100%;
         height: 400px;
         text-align: center;

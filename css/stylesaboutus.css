@@ -17,8 +17,8 @@ body {
 
  /* Column container */
 .content {
-  display: block;
-  background-color: #F1EFEF;
+  display: inline-block;
+  background-color: #fff;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -51,10 +51,11 @@ p.about-us-text {
   text-shadow: 1px 1px 3px #230D0C;
 }
 /* Fake image, just for this example */
-.img {
+.img-about {
   display:block;
   width: 100%;
   padding: 1px;
   height: 100%;
-  margin-bottom: 50%;
+  margin-top: 20%;
+
 }
