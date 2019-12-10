@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cakes O'Clock</title>
+        <!-- Style sheets -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles-products.css" />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <!-- Js -->
+        <script src= "js/script.js"></script>
+        <script src= "js/script-home.js"></script>
+    </head>
+    <body>
+  	<!-- header -->
+    <header class="card-container">
+        <!-- logo -->
+        <figure class="container mt-1">
+            <a class="" href="./1-index.html" >
+                <img src="img/index/Cakes-O'clock-logo.png" alt="Cakes O'clock logo" class="img-logo">
+            </a>
+        </figure>
+        <!-- navigation large & medium devices -->
+        <nav class="nav-large">
+            <a href="./1-index.html" class="">HOME</a>
+            <a href="./2-about_us.html" class="">ABOUT US</a>
+            <a href="./3-products.html" class="active">PRODUCTS</a>
+            <a href="./7-contact_us.html" class="">CONTACT</a>
+        </nav>
+        <!-- navigation small devices -->
+        <nav class="nav-mobile">
+            <ul>
+                <li class=""><a href="./1-index.html" >HOME</a></li>
+                <li class=""><a href="./2-about_us.html">ABOUT US</a></li>
+                <li class="active" ><a href="./3-products.html">PRODUCTS</a></li>
+                <li class=""><a href="./7-contact_us.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header -->
+    <!-- main content -->
+    <main class="container">
+        <!-- products large devices-->
+        <section class="submenu">
+            <button class="tablinks" onclick="openProduct(event, 'Cakes')" id="defaultOpen">
+                Cakes
+            </button>
+            <button class="tablinks" onclick="openProduct(event, 'Brownies')">      Brownies
+            </button>
+            <button class="tablinks" onclick="openProduct(event, 'Cupcakes')">      Cupcakes
+            </button>
+            <button class="tablinks" onclick="openProduct(event, 'Cookies')">      Cookies
+            </button>
+        </section>
+        <section id="Cakes" class="tabcontent">
+            <h1 class="bottom-dotted text-center">Cakes</h1>
+            <div class="card-container">
+                <div class="category-card">
+                    <img src="img/products/choco_cake.jpg"  class="img" alt="chocolate cake">
+                    <h2>Chocolate Cake</h2>
+                    <p class="text-justify pl-1 pr-1">Moist chocolate sponge covered in real 55% Belgium Chocolate.</p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Sulphites</p>
+                    <h3 class="price-text">From €25</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/tiramisu_cake.jpg"  class="img" alt="tiramisu cake">
+                    <h2>Tiramisu Cake</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        It is  made of ladyfingers dipped-in coffee, layered with a whipped mixture of egg, sugar, and mascarpone cheese, flavoured with cocoa.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Sulphites</p>
+                    <h3 class="price-text">From €20</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/cheese_cake.jpg"  class="img" alt="cheese cake">
+                    <h2>Cheese Cake</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        Can be prepared in many flavors, suchas: strawberry, pumpkin, keylime, chestnut, or toffee.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Cheese</p>
+                    <h3 class="price-text">From €25</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/lemon_cake.jpg"  class="img" alt="lemon cake">
+                    <h2>Lemon Cake</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        A combination of flour, sugar, eggs, lemon zest and butter.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk</p>
+                    <h3 class="price-text">From €20</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/berry_cake.jpg"  class="img" alt="berry cake">
+                    <h2>Berrys Cake</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        A combination of flour, sugar, eggs, butter and berries.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk</p>
+                    <h3 class="price-text">From €20</h3>
+                </div>
+            </div>
+        </section>
+        <section id="Brownies" class="tabcontent">
+            <h1 class="bottom-dotted text-center">Brownies</h1>
+            <div class="card-container">
+                <div class="category-card">
+                    <img src="img/products/almond_brownies.jpg"  class="img" alt="almond cake">
+                    <h2>Almond Brownies</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        Contains less butter and more flour, almonds and chocolate.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Cheese</p>
+                    <h3 class="price-text">From €15 - €30</h3>
+                    <p class="text-center"> 4, 8, 12 & 24 units</p>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/fudgy_brownies.jpg"  class="img" alt="fudgy brownies.jpg">
+                    <h2>Fudgy Brownies</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        Melting the butter rather than creaming it with sugar yields a denser, fudgier outcome.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Cheese</p>
+                    <h3 class="price-text">From €15 - €30</h3>
+                    <p class="text-center"> 4, 8, 12 & 24 units</p>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/blondie_brownies.jpg"  class="img" alt="blondie brownies.jpg">
+                    <h2>Blondie Brownies</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        Blondies are really butterscotch bars, made with brown sugar, butter, and eggs and usually nuts, but no chocolate.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Cheese</p>
+                    <h3 class="price-text">From €15 - €30</h3>
+                    <p class="text-center"> 4, 8, 12 & 24 units</p>
+                </div>               
+            </div>
+        </section>
+        <section id="Cupcakes" class="tabcontent">
+            <h1 class="bottom-dotted text-center">Cupcakes</h1>
+            <div class="card-container">
+                <div class="category-card">
+                    <img src="img/products/fruit-merenge_cupcake.jpg"  class="img" alt="fruit-merenge cupcakes">
+                    <h2>Fruit-Menrengue Cupcakes</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        A small cake designed to serve of small portions.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Cheese</p>
+                    <h3 class="price-text">From €15 - €30</h3>
+                    <p class="text-center"> 4, 8, 12 & 24 units</p>
+                </div>
+            </div>
+        </section>
+        <section id="Cookies" class="tabcontent">
+            <h1 class="bottom-dotted text-center">Cookies</h1>
+            <div class="card-container">
+                <div class="category-card">
+                    <img src="img/products/fruit-merenge_cupcake.jpg"  class="img" alt="fruit-merenge cupcakes">
+                    <h2>Fruit-Menrengue Cupcakes</h2>
+                    <p class="text-justify pl-1 pr-1">
+                        A small cake designed to serve of small portions.
+                    </p>
+                    <h3> Allergen Information:</h3>
+                    <p class="text-justify pl-1 pr-1">Gluten (Wheat), Eggs, Milk, Cheese</p>
+                    <h3 class="price-text">From €15 - €30</h3>
+                    <p class="text-center"> 4, 8, 12 & 24 units</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main content -->
+    <!-- footer -->
+    <footer>
+    	<h4 class="footer-h4">Follow us on</h4>
+    	<!-- social media -->
+    	<div class="card-container social-media">
+			<div class="pr-1">
+				<a href="" target="" > 
+    				<img src="img/index/fb.png" alt="facebook" class="img"/> 
+    			</a>
+			</div>
+    		<div class="pr-1">
+    			<a href="" target="" > 
+    				<img src="img/index/instagram.png" alt="instagram" class="img"/> 
+    			</a>
+    		</div>
+    		<div class="pr-1">
+    			<a href="" target=""> 
+    				<img src="img/index/twitter.png" alt="twitter" class="img"/> 
+    			</a>
+    		</div>
+    	</div>
+    	<!-- by -->
+        <p>® 2019 Cakes O'clock Shop. All rights are reserved.</p>
+    </footer>
+    <!-- footer -->
+    <!-- Tab navigation script -->
+    <script>
+    function openProduct(evt, productName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(productName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+    <!-- Tab navigation script -->
+  </body>
+</html>

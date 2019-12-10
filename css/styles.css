@@ -29,7 +29,7 @@ body {
 .card-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: auto;
+    justify-content: center;
     margin: auto;
 }
 
@@ -473,7 +473,7 @@ a.btn-secondary:hover{
     background-color: #F1EFEF;
 }
 
-h2.bottom-dotted{
+.bottom-dotted{
     border-bottom: 5px dotted #230D0C;
     width: 20%;
     margin: auto;
@@ -554,6 +554,13 @@ h2.bottom-dotted{
         box-shadow: 2px 2px 2px #675151;
         margin: 10%;
         text-align: center;
+    }
+
+    .bottom-dotted{
+        border-bottom: 5px dotted #230D0C;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20px;
     }
 
 
