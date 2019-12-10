@@ -1,3 +1,18 @@
+.content-20{
+    width: 20%;
+    height: 100vh;
+    display: inline-block;
+    margin: 50px 0px;
+}
+
+.content-75{
+    width: 75%;
+    height: 100%;
+    display: inline-block;
+    margin: 50px 0px;
+}
+
+
 nav.submenu{
 	height: 75%;
 	display:block;
@@ -27,6 +42,15 @@ nav.submenu{
     background-color: #FFF;
 }
 
+.submenu a.active{
+    color:#AD2D2D;
+    font-weight: 800;
+    font-size: 1.3rem;
+    background-color: #FFF;
+    border-bottom: 2px dotted #AD2D2D;
+}
+
+
 .category-card{
     width: 28%;
     height: 100%;
@@ -39,7 +63,7 @@ nav.submenu{
 }
 
 .price-text{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     margin: 0px 0px 10px;
