@@ -1,7 +1,7 @@
 console.log('it works') /*checked to see js is inserted correctly*/
 
 $(document).ready(function() {  /*ready() method is used to make a function available after the document is loaded*/
- $('.submit').click(function(event) {
+  $('.submit').click(function(event) {
   event.preventDefault() /*everytime something makes the form invalid this function will prevent it to submit */
   console.log('Clicked button')/*checked to see the send button works well- the function  */
  
@@ -29,11 +29,11 @@ $(document).ready(function() {  /*ready() method is used to make a function avai
 
  if(message.length >=10) {
    statusElm.append('<div> Message is valid </div>')
- }else {
-   event.preventDefault()
-   statusElm.append('<div> Message is not valid </div>')
- }
-     
+   }else {
+     event.preventDefault()
+     statusElm.append('<div> Message is not valid </div>')
+   }
+})     
      
 $.ajax({
 			url:'https://formspree.io/x19171544@student.ncirl.ie',
@@ -54,3 +54,8 @@ $.ajax({
 
   })
 })
+
+
+
+    
+    

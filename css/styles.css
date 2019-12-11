@@ -2,9 +2,8 @@
 --------------------------------------------------------*/
 html {
   /* line-height: 1.15; 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; 
 }
-
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -13,7 +12,7 @@ body {
     margin: 0;
 }
 
-
+/* Flexbox Layout to distribute the content */
 .flex-container {
     display: flex;
     justify-content:space-around;
@@ -29,153 +28,109 @@ body {
 .card-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: auto;
+    justify-content: center;
     margin: auto;
 }
 
-
+/* border all */
 .border{
     border: 1px solid #000;
 }
 
+/* border bottom decorated*/
+.bottom-dotted{
+    border-bottom: 5px dotted #230D0C;
+    width: 20%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* margin all */
 .margin{
     margin: 20px;
 }
 
+/* margin auto */
 .margin-auto{
     margin: auto;
 }
 
+/* margin top of 2% */
 .mt-1{
-     margin-top: 2%;
+    margin-top: 2%;
 }
 
+/* margin left of 2% */
 .ml-1{
-     margin-left: 2%;
+    margin-left: 2%;
 }
 
+/* margin right of 2% */
 .mr-1{
-     margin-right: 2%;
+    margin-right: 2%;
 }
 
+/* margin bottom of 2% */
 .mb-1{
     margin-bottom: 2%;
 }
 
-.mt-2{
-     margin-top: 15%;
-}
-
-.ml-2{
-     margin-left: 15%;
-}
-
-.mr-2{
-     margin-right: 15%;
-}
-
-.mb-2{
-    margin-bottom: 15%;
-}
-
-
-.mt-3{
-     margin-top: 25%;
-}
-
-.ml-3{
-     margin-left: 25%;
-}
-
-.mr-3{
-     margin-right: 25%;
-}
-
-.mb-3{
-    margin-bottom: 25%;
-}
-
-
+/* padding all of 5%*/
 .padding-1{
-    margin: 10px;
+    padding: 5%;
 }
 
+/* padding top of 2% */
 .pt-1{
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
+/* padding left of 2% */
 .pl-1{
-    padding-left: 5%;
+    padding-left: 2%;
 }
 
+/* padding right of 2% */
 .pr-1{
-    padding-right: 5%;
+    padding-right: 2%;
 }
 
+/* padding bottom of 2% */
 .pb-1{
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
-.pt-2{
-    padding-top: 10%;
-}
-
-.pl-2{
-    padding-left: 10%;
-}
-
-.pr-2{
-    padding-right: 10%;
-}
-
-.pb-2{
-    padding-bottom: 10%;
-}
-
-.pt-3{
-    padding-top: 25%;
-}
-
-.pl-3{
-    padding-left: 25%;
-}
-
-.pr-3{
-    padding-right: 25%;
-}
-
-.pb-3{
-    padding-bottom: 25%;
-}
-
-.pl-4{
-    padding-left: 50%;
-}
-
+/* Float Property to letf */
 .float-left{
     float: left;
 }
 
+/* Float Property to right */
 .float-right{
     float: right;
 }
 
+/* Text Alignment to the left */
 .text-left{
     text-align: left;
 }
 
+/* Text Alignment to centre */
 .text-center{
     text-align: center;
 }
 
+/* Text Alignment to the right */
 .text-right{
     text-align: right;
 }
 
+/* Text Alignment justify */
 .text-justify{
     text-align: justify;
 }
 
+/* Headings*/
 h1 { 
     font-weight: 800;
     font-size: 2rem;
@@ -189,6 +144,12 @@ h2{
 }
 
 
+/* Image responsive*/
+.img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 /*= GENERAL CSS | MEDIUM/TABLETS
@@ -196,6 +157,7 @@ h2{
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+    /* Headings for medium size devices*/
     h1 { 
         font-weight: 800;
         font-size: 2rem;
@@ -208,6 +170,13 @@ h2{
         font-size: 1.6rem;
     }
 
+    /* border bottom decorated for medium size devices*/
+    .bottom-dotted{
+        border-bottom: 5px dotted #230D0C;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
 
  }
 
@@ -216,24 +185,34 @@ h2{
 --------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
-
+    
+    /* Container Layout for small size devices */
     .container {
         display: block;
         justify-content: center;
         margin: auto;
     }
 
+    /* border bottom decorated for small size devices*/
+    .bottom-dotted{
+        border-bottom: 5px dotted #230D0C;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    /* parragraph style for small size devices */
     p{
        font-weight: 200;
         font-size: .8rem; 
-    }
-
+    } 
 }
 
 
 
 /*= HEADER | LARGE/DESKTOP
 --------------------------------------------------------*/
+/* header style */
 header {
     text-align: center;
     background-color: #F1EFEF;
@@ -241,6 +220,7 @@ header {
     display: block;
 }
 
+/* logo responsive*/
 .img-logo {
     display: block;
     margin-left: auto;
@@ -249,31 +229,12 @@ header {
     height: auto;
 }
 
-a.btn-primary{
-    background-color: #ED3D3D;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 0px;
-    padding: 10px 30px;
-    border-radius: 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 1px 1px 2px #675151;
-}
-
-a.btn-primary:hover{
-    background-color: #AD2D2D;
-    color:#fff;
-    font-weight: 500;
-}
-
 /*= Navigation
 --------------------------------------------------------*/
+/* navigation style for large size devices*/
 nav{
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 0px;
     text-align: center;
     display: block;
     background-color: #230D0C;
@@ -285,31 +246,33 @@ nav a{
     padding: 20px;
     color:#fff;
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
 nav a:hover{
-    font-weight: 500;
-    background-color: #664B4B;
+    font-weight: 700;
+    background-color: #B44040;
 }
 
 nav a.active{
-    font-weight: 500;
-    background-color: #664B4B;
+    font-weight: 700;
+    background-color: #B44040;
 }
 
 .nav-mobile{
     display: none;
 }
 
+
 /*= HEADER | MEDIUM/TABLETS
 --------------------------------------------------------*/
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+    /* navigation style for medium size devices*/
     nav a{
         margin-left: 20px;
         display:inline;
@@ -320,10 +283,6 @@ nav a.active{
         font-size: 1rem;
         text-align: left;
         transition: all 0.3s ease;
-    }
-
-    .btn-shop{
-        display: none;
     }
 
    .nav-mobile{
@@ -337,265 +296,159 @@ nav a.active{
 --------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
-
-    .btn-shop{
+    /* navigation style for small size devices */
+    .menu-large{
         display: none;
     }
 
-    .nav-large{
-        display: none;
-    }
-
-    nav.nav-mobile{
+    .nav-mobile{
         width: 100%;
-        padding: 10px;
         text-align: center;
         display: block;
-        background-color: #230D0C;
+        background-color: #F1EFEF;
+        border-bottom: 10px solid #B44040;
     }
 
-    nav.nav-mobile li{
-        padding: 15px 0px;
-        color:#fff;
-        list-style-type: none;
-        border-bottom: 3px dotted #fff;
+    .topnav {
+        overflow: hidden;
+        position: relative;
+  
     }
 
-    nav.nav-mobile li:hover{
-        font-weight: 500;
-        background-color: #664B4B;
+    #navLinks{
+        background: #230D0C;
+        display: none;
     }
 
-    nav.nav-mobile li.active{
-        font-weight: 500;
-        background-color: #664B4B;
-    }
-
-    nav.nav-mobile a{
-        display:inline;
+    .topnav a {
+        padding: 15px;
         color:#fff;
         font-weight: 200;
         font-size: 1rem;
-        transition: all 0.3s ease;
-    }
-
-}
-
-
-
-
-/*= HOME - CONTENT| LARGE/DESKTOP
---------------------------------------------------------*/
-main{
-    display: block;
-}
-
-.margin{
-    margin:20px 10px;
-}
-
-.banner-lg{
-    background: url('../img/index/home-2.jpg') 50% 50%  no-repeat fixed;
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    padding-top: 40px;
-}
-
-.heading{
-    position: absolute;
-    right: 100px;
-    width: 40%;
-}
-
-h1.banner-h1{
-    font-weight: 800;
-    font-size: 3rem;
-    color: #fff;
-}
-
-p.banner-text{
-    font-weight: 400;
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1.5;
-    color: #fff;
-    border-top: 5px dotted #fff;
-    border-bottom: 5px dotted #fff;
-    padding: 20px 0px;
-    text-shadow: 1px 1px 3px #230D0C;
-}
-
-.banner-sm{
-    display: none;
-}
-
-
-.product-card{
-    display: inline-block;
-    width: 20%;
-    background-color: #F1EFEF;
-    border-radius: 4px;
-    border:.5px solid #C7BFBF;
-    box-shadow: 2px 2px 2px #675151;
-    margin: 20px 10px;
-    text-align: center;
-}
-
-.img {
-    width: 100%;
-    height: auto;
-}
-
-a.btn-secondary{
-    background-color: #230D0C;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 0px;
-    padding: 10px 25px;
-    border-radius: 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 1px 1px 2px #675151;
-}
-
-a.btn-secondary:hover{
-    background-color: #664B4B;
-    color:#fff;
-    font-weight: 500;
-}
-
-.testimonials{
-    width: 100%;
-    height: 500px;
-    background-color: #F1EFEF;
-}
-
-h2.bottom-dotted{
-    border-bottom: 5px dotted #230D0C;
-    width: 20%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-.testimonials-box{
-    width: 50%;
-    margin: 20px auto;
-    font-weight: 300;
-    font-size: 1.2rem;
-    line-height: 2;
-
-}
-
-
-.quote-text{
-    font-weight: 500;
-    font-size: 1rem;
-    color: #ED3D3D;
-}
-
-
-/*=  HOME - CONTENT| MEDIUM/TABLETS
---------------------------------------------------------*/
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .banner-lg{
-        background: url('../img/index/home-2.jpg') 50% 50%  no-repeat fixed;
-        width: 100%;
-        height: 400px;
-        text-align: center;
-        padding-top: 40px;
-    }
-
-    h1.banner-h1{
-        font-weight: 800;
-        font-size: 2.5rem;
-        color: #fff;
-    }
-
-    p.banner-text{
-        font-weight: 400;
-        font-size: 1.2rem;
-        font-style: italic;
-        line-height: 1.5;
-        color: #fff;
-        border-top: 3px dotted #fff;
-        border-bottom: 3px dotted #fff;
-        padding: 20px 0px;
-        text-shadow: 1px 1px 3px #230D0C;
-    }
-
-
- }
-
-
-/*=  HOME - CONTENT | SMALL/MOBILE
---------------------------------------------------------*/
-
-@media screen and (max-width: 767px){
-
-    .banner-lg{
-        display: none;
-    }
-
-    .banner-sm{
+        text-decoration: none;
         display: block;
-        width: 100%;
     }
 
-    .product-card{
+    .topnav a:hover{
+        font-weight: 500;
+    }
+
+    .topnav .active {
+        display: inline-block;
+        justify-content: center;
         width: 80%;
-        background-color: #F1EFEF;
-        border-radius: 4px;
-        border:.5px solid #C7BFBF;
-        box-shadow: 2px 2px 2px #675151;
-        margin: 10%;
-        text-align: center;
+        padding: 15px 0px;
+        font-weight: 500;
+        border-bottom: 3px dotted #fff;
     }
 
+    .topnav a.icon {
+        background: #230D0C;
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        width: 30px;
+        height:30px;
+        border-radius: 4px;
+    }
+
+    a.icon:hover {
+        background: #664B4B;
+    }
+
+    .line-menu{
+        background: #fff;
+        width: 30px;
+        height:2px;
+        margin: 5px 0px;
+    }
+
+    /* logo style for small size devices*/
+    .img-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: auto;
+    }
 
 }
 
 
 /*= FOOTER | LARGE/DESKTOP
 --------------------------------------------------------*/
+/* Footer style for large size devices*/
 footer {
-    padding: 10px;
     text-align: center;
     background-color: #230D0C;
     color: #fff;
     font-weight: 200;
     font-size: 1rem;
-
 }
 
-h4.footer-h4{
-    font-weight: 200;
-    font-size: 1.5rem;
+.footer-h4{
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 .social-media{
-    margin-bottom: 20px;
     padding-bottom: 20px;
+    justify-content: center;
+    margin: auto;
     width: 70%;
-    border-bottom: 1px dotted #fff;
+    border-bottom: 2px dotted #fff;
 
 }
 
+/*= Navigation style for large size devices
+--------------------------------------------------------*/
+.nav-footer a{
+    margin: 0px 5px;
+    padding: 5px;
+    display:inline;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.nav-footer a:hover{
+    font-weight: 500;
+    background-color: #230D0C;
+}
+
+.nav-footer a.active{
+    font-weight: 700;
+    background-color: #230D0C;
+    border: 1px dotted #FFF;
+}
+
+/*= Credits */
+.credits{
+    height: 60px;
+    display: block;
+    margin: 0px;
+    text-align: center;
+    background-color: #B44040;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+}
 
 /*=  FOOTER | MEDIUM/TABLETS
 --------------------------------------------------------*/
-
 @media (min-width: 768px) and (max-width: 991px) {
-
-    h4.footer-h4{
-        font-weight: 200;
+    
+    /* Footer style for medium size devices*/
+    .footer-h4{
+        font-weight: 500;
         font-size: 1.2rem;
     }
-
 
  }
 
@@ -604,9 +457,9 @@ h4.footer-h4{
 --------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
-
-    h4.footer-h4{
-        font-weight: 200;
+     /* Footer style for small size devices*/
+    .footer-h4{
+        font-weight: 300;
         font-size: 1.1rem;
     }
 
