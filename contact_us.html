@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cakes O'Clock</title>
+        <meta charset="utf-8" />
+        <!-- Style sheets -->
+        <link rel="stylesheet" type="text/css" href="css/stylescontactus.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">  
+        <!-- js scripts -->
+        <script src= "https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"> </script> 
+        <script src= "js/script.js"></script>
+    </head>
+    <body>
+    <!-- header -->
+    <header class="">
+        <!-- navigation large & medium devices -->
+        <div class="menu-large card-container">
+            <!-- logo -->
+            <figure class="container mt-1">
+                <a class="" href="./index.html" >
+                    <img src="img/index/logo.png" alt="Cakes O'clock logo" class="img-logo">
+                </a>
+            </figure>
+            <!-- navigation links -->
+            <nav class="menu-large mt-1">
+                <a href="./index.html" class="">HOME</a>
+                <a href="./about_us.html" class=" ">ABOUT US</a>
+                <a href="./products.html" class=" ">PRODUCTS</a>
+                <a href="./contact_us.html" class="active">CONTACT</a>
+            </nav>
+        </div>
+        <!-- navigation large & medium devices -->
+        <!-- navigation small devices -->
+        <div class="nav-mobile">
+            <!-- top navigation -->
+            <div class="topnav">
+                <!-- logo -->
+                <a href="./index.html" class="">
+                    <img src="img/index/mobile-logo.png" alt="Cakes O'clock logo" class="img-logo">
+                </a>
+                <!-- navigation links -->
+                <div id="navLinks">
+                    <a href="./index.html" class="">HOME</a>
+                    <a href="./about_us.html" class=" ">ABOUT US</a>
+                    <a href="./products.html" class=" ">PRODUCTS</a>
+                    <a href="./contact_us.html" class="active">CONTACT</a>
+                </div>
+                <!-- hamburger menu icon -->
+                <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+                    <div class="line-menu"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu"></div>
+                </a>
+            </div>
+        </div>
+        <!-- navigation small devices -->
+    </header>
+    <!-- header -->
+
+   <!-- MAIN CONTENT -->
+    <main class ="content">
+    <h1 class="h1-contact"> CONTACT US </h1>
+    <!-- MAP -->
+    
+  <div class= "map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.0993937265157!2d-6.239833584023012!3d53.35937608143615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e5f2131663f%3A0x554992a3b3649223!2s3%20E%20Wall%20Rd%2C%20North%20Dock%2C%20Dublin!5e0!3m2!1sen!2sie!4v1575652817534!5m2!1sen!2sie" width="425" height="350" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+  
+  <div class= "card-address">
+    <address>
+      <p>123 North St.</p>
+      <p>East Wall</p>
+      <p>Dublin</p>
+    </address>
+  </div>
+</div>
+    <!--Contact Form -->
+
+   <div class="contact-form border">
+     <form 
+      action ="https://formspree.io/x19171544@student.ncirl.ie"
+      method="POST">
+      
+    <label>
+         Subject
+      <input type= "text" name ="subject" placeholder="Message subject.." class ="subject"/>
+    </label>
+    
+     <label>
+      E-mail
+    <input type= "email" name ="email" placeholder="Your email.." class ="email"/>
+    </label>
+    
+     <label  >
+      Message
+    <textarea name ="message"  placeholder="Write something.." style="height:150px" class ="message"></textarea>
+    </label>
+    
+    <div class="status">
+    </div>
+    
+     <input type="submit" value="Send" class= "submit">
+     
+     </form>
+   </div>
+ 
+ </main>
+
+       <!-- footer -->
+    <footer>
+        <!-- social media -->
+        <div class="social-media pt-1">
+            <h4 class="footer-h4">Follow us on</h4>
+            <div class="card-container">
+                <div class="pr-1">
+                    <a href="" target="_blank" >
+                        <img src="img/index/fb.png" alt="facebook" class="img"/>
+                    </a>
+                </div>
+                <div class="pr-1">
+                    <a href="" target="_blank" >
+                        <img src="img/index/instagram.png" alt="instagram" class="img"/>
+                    </a>
+                </div>
+                <div class="pr-1">
+                    <a href="" target="_blank">
+                        <img src="img/index/twitter.png" alt="twitter" class="img"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer nav -->
+        <nav class="menu-large">
+            <a href="./index.html" class="">Home</a>
+            <a href="./about_us.html" class=" ">About </a>
+            <a href="./products.html" class=" ">Products</a>
+            <a href="./contact_us.html" class=" ">Contact Us</a>
+        </nav>
+        <nav class="nav-footer">
+            <a href="./faq.html" class="">FAQ</a>
+            <a href="./cookie_policy.html" class="">Cookies Policy</a>
+        </nav>
+        <!-- credits -->
+        <div class="credits">
+            <p class="pt-1">® 2019 Cakes O'clock Shop. All rights are reserved.</p>
+        </div> 
+    </footer>
+    <!-- footer -->
+    <!-- js scripts -->
+    <script src= "js/script-mobile-nav.js"></script>
+    <script src= "js/script-contact.js"></script>
+    <!-- js scripts -->
+  </body>
+  </html>

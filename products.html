@@ -2,14 +2,12 @@
 <html lang="en">
     <head>
         <title>Cakes O'Clock</title>
+        <meta charset="utf-8" />
         <!-- Style sheets -->
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <link rel="stylesheet" type="text/css" href="css/styles-products.css" />
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-        <!-- Js -->
-        <script src= "js/script.js"></script>
-        <script src= "js/script-home.js"></script>
     </head>
     <body>
   	<!-- header -->
@@ -18,29 +16,35 @@
         <div class="menu-large card-container">
             <!-- logo -->
             <figure class="container mt-1">
-                <a class="" href="./1-index.html" >
+                <a class="" href="./index.html" >
                     <img src="img/index/logo.png" alt="Cakes O'clock logo" class="img-logo">
                 </a>
             </figure>
-            <nav class="nav-large">
-                <a href="./1-index.html" class="">HOME</a>
-                <a href="./2-about_us.html" class=" ">ABOUT US</a>
-                <a href="./3-products.html" class="active">PRODUCTS</a>
-                <a href="./7-contact_us.html" class=" ">CONTACT</a>
+            <!-- navigation links -->
+            <nav class="menu-large mt-1">
+                <a href="./index.html" class="">HOME</a>
+                <a href="./about_us.html" class=" ">ABOUT US</a>
+                <a href="./products.html" class="active">PRODUCTS</a>
+                <a href="./contact_us.html" class=" ">CONTACT</a>
             </nav>
         </div>
+        <!-- navigation large & medium devices -->
         <!-- navigation small devices -->
         <div class="nav-mobile">
+            <!-- top navigation -->
             <div class="topnav">
-                <a href="./1-index.html" class="">
+                <!-- logo -->
+                <a href="./index.html" class="">
                     <img src="img/index/mobile-logo.png" alt="Cakes O'clock logo" class="img-logo">
                 </a>
-                <div id="myLinks">
-                    <a href="./1-index.html" class="">HOME</a>
-                    <a href="./2-about_us.html" class=" ">ABOUT US</a>
-                    <a href="./3-products.html" class="active">PRODUCTS</a>
-                    <a href="./7-contact_us.html" class=" ">CONTACT</a>
+                <!-- navigation links -->
+                <div id="navLinks">
+                    <a href="./index.html" class="">HOME</a>
+                    <a href="./about_us.html" class=" ">ABOUT US</a>
+                    <a href="./products.html" class="active">PRODUCTS</a>
+                    <a href="./contact_us.html" class=" ">CONTACT</a>
                 </div>
+                <!-- hamburger menu icon -->
                 <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
                     <div class="line-menu"></div>
                     <div class="line-menu"></div>
@@ -54,7 +58,7 @@
     <!-- main content -->
     <main class="container">
         <!-- products large devices-->
-        <section class="submenu">
+        <div class="submenu">
             <button class="tablinks" onclick="openProduct(event, 'Cakes')" id="defaultOpen">
                 Cakes
             </button>
@@ -64,7 +68,7 @@
             </button>
             <button class="tablinks" onclick="openProduct(event, 'Cookies')">      Cookies
             </button>
-        </section>
+        </div>
         <section id="Cakes" class="tabcontent">
             <h1 class="bottom-dotted text-center">Cakes</h1>
             <div class="card-container">
@@ -192,60 +196,47 @@
     <!-- main content -->
     <!-- footer -->
     <footer>
-    	<h4 class="footer-h4">Follow us on</h4>
-    	<!-- social media -->
-    	<div class="card-container social-media">
-			<div class="pr-1">
-				<a href="" target="" > 
-    				<img src="img/index/fb.png" alt="facebook" class="img"/> 
-    			</a>
-			</div>
-    		<div class="pr-1">
-    			<a href="" target="" > 
-    				<img src="img/index/instagram.png" alt="instagram" class="img"/> 
-    			</a>
-    		</div>
-    		<div class="pr-1">
-    			<a href="" target=""> 
-    				<img src="img/index/twitter.png" alt="twitter" class="img"/> 
-    			</a>
-    		</div>
-    	</div>
-    	<!-- by -->
-        <p>® 2019 Cakes O'clock Shop. All rights are reserved.</p>
+        <!-- social media -->
+        <div class="social-media pt-1">
+            <h4 class="footer-h4">Follow us on</h4>
+            <div class="card-container">
+                <div class="pr-1">
+                    <a href="" target="_blank" >
+                        <img src="img/index/fb.png" alt="facebook" class="img"/>
+                    </a>
+                </div>
+                <div class="pr-1">
+                    <a href="" target="_blank" >
+                        <img src="img/index/instagram.png" alt="instagram" class="img"/>
+                    </a>
+                </div>
+                <div class="pr-1">
+                    <a href="" target="_blank">
+                        <img src="img/index/twitter.png" alt="twitter" class="img"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer nav -->
+        <nav class="menu-large">
+            <a href="./index.html" class="">Home</a>
+            <a href="./about_us.html" class=" ">About </a>
+            <a href="./products.html" class=" ">Products</a>
+            <a href="./contact_us.html" class=" ">Contact Us</a>
+        </nav>
+        <nav class="nav-footer">
+            <a href="./faq.html" class="">FAQ</a>
+            <a href="./cookie_policy.html" class="">Cookies Policy</a>
+        </nav>
+        <!-- credits -->
+        <div class="credits">
+            <p class="pt-1">® 2019 Cakes O'clock Shop. All rights are reserved.</p>
+        </div> 
     </footer>
     <!-- footer -->
-    <!-- mobile Menu script -->
-    <script>
-        function mobileMenu() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-            x.style.display = "none";
-            } 
-            else {
-            x.style.display = "block";
-            }
-        }
-    </script>
-    <!-- mobile Menu script -->
-    <!-- Tab navigation script -->
-    <script>
-    function openProduct(evt, productName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(productName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    </script>
-    <!-- Tab navigation script -->
+    <!-- js scripts -->
+    <script src= "js/script-mobile-nav.js"></script>
+    <script src= "js/script-products.js"></script>
+    <!-- js scripts -->
   </body>
 </html>

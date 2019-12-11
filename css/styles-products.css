@@ -1,7 +1,8 @@
 
 /*=  PRODUCTS - CONTENT| LARGE/DESKTOP
 --------------------------------------------------------*/
-/* Tab Style */
+/* Tab Style 
+--------------------------------------------------------*/
 .submenu{
     width: 20%;
 	height: 100vh;
@@ -50,17 +51,18 @@
     margin: 50px 0px;
 }
 
+/* category box style */
 .category-card{
     width: 28%;
     height: 100%;
     text-align: center;
     margin: 20px 20px;
-    padding: auto;
     background-color: #F1EFEF;
     box-shadow: 1px 1px 1.5px #675151;
     border: 1px solid #C7BFBF;
 }
 
+/* text style for price item */
 .price-text{
     font-size: 1.5rem;
     font-weight: 600;
@@ -85,7 +87,8 @@
 --------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
-    /* Tab Style */
+    /* Tab Style for small size devices
+    --------------------------------------------------------*/
     .submenu{
         height: 100%;
         width: 100%;
@@ -135,28 +138,26 @@
         height: 100%;
         display: inline-block;
         justify-content: center;
-        margin: auto;
+        margin: auto;/* category box style */
     }
 
+    /* category box style */
     .category-card{
         width: 70%;
         height: 100%;
         text-align: center;
         margin: 20px 20px;
-        padding: auto;
         background-color: #F1EFEF;
         box-shadow: 1px 1px 1.5px #675151;
         border: 1px solid #C7BFBF;
     }
 
+    /* text style for price item */
     .price-text{
         font-size: 1.5rem;
         font-weight: 600;
         text-align: center;
         margin: 0px 0px 10px;
     }
-
-
-
 
 }
