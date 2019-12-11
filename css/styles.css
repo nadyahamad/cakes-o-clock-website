@@ -456,7 +456,7 @@ footer {
 /*=  FOOTER | SMALL/MOBILE
 --------------------------------------------------------*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
      /* Footer style for small size devices*/
     .footer-h4{
         font-weight: 300;
