@@ -1,5 +1,9 @@
 console.log('it works') /*checked to see js is inserted correctly*/
 
+function getForm() {
+    return document.getElementByClassName("contact");
+  }
+
 $(document).ready(function() {  /*ready() method is used to make a function available after the document is loaded*/
   $('.submit').click(function(event) {
   event.preventDefault() /*everytime something makes the form invalid this function will prevent it to submit */
@@ -40,9 +44,7 @@ $.ajax({
 			method:'POST',
 			data:{
 				message:message,
-				_replyto:email,
 				 email:email,
-				comments:comments,
 				_subject:'My Form Submission',
 			},
 			dataType:"json",
