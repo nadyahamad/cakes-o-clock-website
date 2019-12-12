@@ -39,25 +39,7 @@ $(document).ready(function() {  /*ready() method is used to make a function avai
    }
 })     
      
-$.ajax({
-			url:'https://formspree.io/x19171544@student.ncirl.ie',
-			method:'POST',
-			data:{
-				message:message,
-				 email:email,
-				_subject:'My Form Submission',
-			},
-			dataType:"json",
-			success:function() {
-				console.log('success');	
-				$('#formBlock').hide();
-				$('#thankyouBlock').show();
-			}	
-
-  })
-})
 
 
 
-    
-    
+
