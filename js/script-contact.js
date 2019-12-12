@@ -5,8 +5,7 @@ function getForm() {
   }
 
 $(document).ready(function() {  /*ready() method is used to make a function available after the document is loaded*/
-  $('.submit').click(function(event) {
-  event.preventDefault() /*everytime something makes the form invalid this function will prevent it to submit */
+  $('.submit').click(function(event) { 
   console.log('Clicked button')/*checked to see the send button works well- the function  */
  
  /*Get values for the three fields*/
@@ -20,7 +19,7 @@ $(document).ready(function() {  /*ready() method is used to make a function avai
   if(email.length >5 && email.includes('@') && email.includes('.')) { /*All three conditions need to be true before continuing*/
    statusElm.append('<div> Email is valid </div>')  /*append will add new html inside that selector*/
  } else {
-   event.preventDefault()
+   event.preventDefault()/*everytime something makes the form invalid this function will prevent it to submit */
    statusElm.append('<div> Email is not valid </div>')
  }
 
@@ -39,7 +38,7 @@ $(document).ready(function() {  /*ready() method is used to make a function avai
    }
 }) 
 
-})   
+}) 
 
 
 
