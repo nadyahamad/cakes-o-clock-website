@@ -73,7 +73,7 @@
 
 
 /*=  PRODUCTS - CONTENT | MEDIUM/TABLETS
---------------------------------------------------------*/
+--------------------------------------------------------
 
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -81,7 +81,7 @@
 
 
  }
-
+--------------------------------------------------------*/
 
 /*=  PRODUCTS - CONTENT | SMALL/MOBILE
 --------------------------------------------------------*/
@@ -103,7 +103,7 @@
 
     .submenu button {
         padding: 15px;
-        width: 22%;
+        width: 25%;
         display:inline-block;
         margin: auto;
         color:#230D0C;
@@ -129,16 +129,16 @@
         font-weight: 800;
         font-size: 1.2rem;
         background-color: #FFF;
-        border-bottom: 2px dotted #AD2D2D;
+        border-bottom: 3px dotted #AD2D2D;
     }
 
     /* items style */
     .tabcontent{
-        width: 80%;
+        width: 90%;
         height: 100%;
         display: inline-block;
         justify-content: center;
-        margin: auto;/* category box style */
+        margin: auto;
     }
 
     /* category box style */

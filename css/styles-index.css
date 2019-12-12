@@ -73,41 +73,13 @@ main{
     display: none;
 }
 
-/* Carousel for banner mobile and testimonials
+/* Carousel for testimonials
 -------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-    background-color: #f1f1f1;
-    color: #230D0C;
 }
 
 /* Next & previous buttons */
@@ -203,7 +175,7 @@ a.btn-secondary:hover{
     width: 50%;
     margin: 20px auto;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2;
 
 }
@@ -249,7 +221,7 @@ a.btn-secondary:hover{
     }
 
 
-    /* products box style */
+    /* products box style
         .product-card{
         display: inline-block;
         width: 20%;
@@ -290,5 +262,51 @@ a.btn-secondary:hover{
         box-shadow: 2px 2px 2px #675151;
         margin: 10%;
         text-align: center;
+        justify-content: center;
+    }
+
+    /* Carousel for banner mobile
+    -------------------------------------------------*/
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+        background-color: #f1f1f1;
+        color: #230D0C;
+    }
+
+    .testimonials-box{
+        width: 70%;
+        margin: 20px auto;
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 2;
+
+    }
+
+    .testimonials{
+        width: 100%;
+        height: 400px;
+        background-color: #F1EFEF;
     }
 }
