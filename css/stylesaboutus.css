@@ -17,7 +17,7 @@ body {
       font-size: 2.5rem;
       color: #000000;
       text-align:center;
-      font-family: 'Lobster', cursive;
+      font-family: 'Lobster Two', cursive;
       border: 3px ;}
 
  /* Column container */
@@ -61,3 +61,4 @@ p.about-us-text {
   border-bottom: 6px dotted #000000;
   padding: 20px 0px;
   }
+
