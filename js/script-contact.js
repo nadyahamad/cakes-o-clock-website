@@ -37,6 +37,7 @@ $(document).ready(function() {  /*ready() method is used to make a function avai
      statusElm.append('<div> Message is not valid </div>')
    }
 }) 
+})
 
 
 
