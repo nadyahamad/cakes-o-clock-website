@@ -1,6 +1,9 @@
-
-* {
-  box-sizing: border-box;
+/*= ABOUT US - CONTENT| LARGE/DESKTOP
+--------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
 }
 
 html,
@@ -11,8 +14,7 @@ body {
   display: block;
 }
 
-/*= ABOUT US - CONTENT| LARGE/DESKTOP
---------------------------------------------------------*/
+
 .title {font-weight: 800;
       font-size: 2.5rem;
       color: #000000;
@@ -50,7 +52,7 @@ body {
   float: right;
   margin-bottom:  80px;
   padding: 20px; /* Some padding */
-  margin-right:70px; 
+  margin-right:70px;
   }
 
 p.about-us-text {
@@ -61,7 +63,37 @@ p.about-us-text {
   border-bottom: 6px dotted #000000;
   padding: 20px 0px;
   }
-/*Small views*/
+
+/*=  ABOUT US - CONTENT | SMALL/MOBILE
+--------------------------------------------------------*/
+
 @media screen and (max-width: 1023px) {
- 
+
+/* Sidebar/left column */
+.column1 {
+  width: 80%; /* Set the width of the sidebar */
+  float: none;
+  margin: auto;
+  display:block;
+  padding: 20px; /* Some padding */
+  }
+
+/* Main column -Right */
+.column2 {
+  width: 80%; /* Set the width of the main content */
+  float: auto;
+  margin-bottom:  80px;
+  padding: 20px; /* Some padding */
+  margin-right:70px;
+  }
+
+  /* image settings */
+.img-about {
+  display:block;
+  width: 100%;
+  padding: 1px;
+  height: 100%;
+  margin-top: auto;
+  }
+
 }

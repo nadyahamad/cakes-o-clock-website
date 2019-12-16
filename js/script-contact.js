@@ -38,7 +38,6 @@ $(document).ready(function() {  /*ready() method is used to make a function avai
    }
 }) 
 
-}) 
 
 
 
