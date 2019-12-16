@@ -137,17 +137,17 @@ body {
 }
 
 /* Headings*/
-    h1 { 
-        font-weight: 800;
-        font-size: 2rem;
-        text-align: center;
-    }
+h1 { 
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
 
-    h2{
-        text-align: center;
-        font-weight: 800;
-        font-size: 1.8rem;
-    }
+h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
 
 
 
@@ -204,14 +204,29 @@ body {
     /* parragraph style for small size devices */
     p{
        font-weight: 200;
-        font-size: .8rem; 
+        font-size: 1.4rem; 
     } 
+
+
+    /* Headings*/
+    h1 { 
+        font-weight: 800;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        font-weight: 800;
+        font-size: 2.3rem;
+    }
+
 
 
     h3{
         text-align: center;
         font-weight: 800;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -338,7 +353,7 @@ header {
         padding: 15px;
         color:#fff;
         font-weight: 200;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         text-decoration: none;
         display: block;
     }
@@ -477,9 +492,35 @@ footer {
 --------------------------------------------------------*/
 
 @media screen and (max-width: 1023px) {
+    /*= Navigation style for small size devices
+    --------------------------------------------------------*/
+    .nav-footer a{
+        margin: 0px 5px;
+        padding: 5px;
+        display:inline;
+        color:#fff;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 1.5rem;
+        font-style: italic;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
      /* Footer style for small size devices*/
     .footer-h4{
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    /*= Credits */
+    .credits{
+        height: 60px;
+        display: block;
+        margin: 0px;
+        text-align: center;
+        background-color: #B44040;
+        color: #fff;
+        font-weight: 200;
+        font-size: 1.5rem;
     }
 }

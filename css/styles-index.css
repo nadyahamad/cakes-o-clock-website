@@ -242,6 +242,27 @@ a.btn-secondary:hover{
 
 @media screen and (max-width: 1023px){
 
+    /* Alert message box 
+     --------------------------------------------------------*/
+    .cookies-alert {
+        padding: 30px;
+        background-color: #a43b3b; 
+        color: #FFF;
+    }
+
+    /* The close button */
+    .closebtn {
+        margin-left: 15px;
+        color: #FFF;
+        font-weight: 400;
+        font-size: 5rem;
+        float: right;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
     /* banner style for small size devices
     --------------------------------------------------------*/
     .banner-lg{
@@ -309,4 +330,27 @@ a.btn-secondary:hover{
         height: 400px;
         background-color: #F1EFEF;
     }
+
+
+    /* button style */
+    a.btn-secondary{
+        background-color: #230D0C;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px 25px;
+        border-radius: 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 1px 1px 2px #675151;
+    }
+
+    a.btn-secondary:hover{
+        background-color: #664B4B;
+        color:#fff;
+        font-weight: 500;
+    }
+
 }

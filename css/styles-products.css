@@ -108,7 +108,7 @@
         margin: auto;
         color:#230D0C;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: left;
         border: none;   
         cursor: pointer;
@@ -119,7 +119,7 @@
     .submenu button:hover {
         color:#1D2128;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 2.1rem;
         background-color: #FFF;
     }
 
@@ -127,7 +127,7 @@
     .submenu button.active {
         color:#AD2D2D;
         font-weight: 800;
-        font-size: 1.2rem;
+        font-size: 2rem;
         background-color: #FFF;
         border-bottom: 3px dotted #AD2D2D;
     }
@@ -154,7 +154,7 @@
 
     /* text style for price item */
     .price-text{
-        font-size: 1.5rem;
+        font-size: 2.3rem;
         font-weight: 600;
         text-align: center;
         margin: 0px 0px 10px;
