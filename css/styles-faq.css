@@ -1,5 +1,5 @@
 p.faq {
-  font-weight: 200;
+  font-weight: 500;
   font-size: .8rem;
   color: #000000;
 }
@@ -31,7 +31,7 @@ p.faq {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  font-weight: 200;
+  font-weight: 600;
   font-size: .8rem;
   color: #000000;
 }

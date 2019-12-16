@@ -61,4 +61,7 @@ p.about-us-text {
   border-bottom: 6px dotted #000000;
   padding: 20px 0px;
   }
-
+/*Small views*/
+@media screen and (max-width: 1023px) {
+ 
+}
